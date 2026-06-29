@@ -1,0 +1,29 @@
+{
+  "name": "photoapp",
+  "version": "1.0.0",
+  "description": "",
+  "homepage": "https://github.com/nurcintosun/PhotoApp#readme",
+  "bugs": {
+    "url": "https://github.com/nurcintosun/PhotoApp/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nurcintosun/PhotoApp.git"
+  },
+  "license": "ISC",
+  "author": "",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start":"node app.js"
+  },
+  "dependencies": {
+    "express": "^5.2.1",
+    "npm": "^11.17.0",
+    "prettier": "^3.9.1"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.14"
+  }
+}
