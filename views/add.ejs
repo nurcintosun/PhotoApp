@@ -1,0 +1,71 @@
+<%- include('partials/_header') -%>
+<%- include('partials/_navigation') -%>
+
+      </div>
+      
+      <div class="tm-welcome-container tm-fixed-header tm-fixed-header-3" style="padding-bottom: 200px;">
+        <div class="text-center">
+          <p class="pt-5 px-5 tm-welcome-text tm-welcome-text-2 mb-1 mt-lg-0 mt-5 text-white mx-auto">
+                Add New Photo<br>Upload your favorite moments
+          </p>                  
+        </div>                
+      </div>
+
+      <div id="tm-fixed-header-bg"></div> 
+    </div>
+
+    <main class="mt-5">
+
+      <div class="container-fluid px-0">
+        <div class="mx-auto tm-content-container">          
+          <div class="row mt-3 mb-5 pb-3">
+            <div class="col-12">
+              <div class="mx-auto tm-about-text-container px-3">
+                <h2 class="tm-page-title mb-4 tm-text-primary">Add New Photo</h2>
+                <p class="mb-4">
+                    Select a Photo for your catalog!!
+                </p>
+              </div>              
+            </div>            
+          </div>
+          
+          <div class="mx-auto pb-3 tm-about-text-container px-3">
+              <div class="row">
+                  <div class="offset-2 col-lg-8 mb-2"> 
+                      <form method="POST" action="/photos" class="tm-contact-form" enctype="multipart/form-data">
+                        
+                        <div class="form-group">
+                          <label for="title" class="tm-text-primary"><strong>Photo Title:</strong></label>
+                          <input type="text" id="title" name="title" class="form-control rounded-0" placeholder="Photo Title" required="" />
+                        </div>
+
+                        <div class="form-group">
+                          <label for="description" class="tm-text-primary"><strong>Description:</strong></label>
+                          <textarea id="description" rows="8" name="description" class="form-control rounded-0" placeholder="Photo Description" required=""></textarea>
+                        </div>
+
+
+                         
+
+                        <div class="form-group">
+                          <label class="tm-text-primary"><strong>Select Image:</strong></label>
+                          <input type="file" name="image" class="form-control-file rounded-0">
+                        </div>
+
+
+                        <div class="form-group mb-0">
+                          <button type="submit" class="btn btn-primary rounded-0 d-block ml-auto mr-0 tm-btn-animate tm-btn-submit tm-icon-submit">
+                            <span>Submit</span>
+                          </button>
+                        </div>
+
+                      </form>    
+                  </div>
+              </div>  
+          </div>                                            
+        </div>
+      </div>
+    </main> <div class="container-fluid tm-content-container mx-auto pt-4"></div>
+                       
+    <script src="/js/parallax.min.js"></script>    
+    <%- include('partials/_footer') -%>
